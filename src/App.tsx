@@ -1,7 +1,8 @@
-import { ThemeProvider } from '@emotion/react';
 import { Suspense } from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import RouterConfig from './RouterConfig';
+import { ThemeProvider } from '@emotion/react';
+
+import { RouterConfig } from './libs';
 import { GlobalStyle, theme } from './styles';
 
 const App = () => (
