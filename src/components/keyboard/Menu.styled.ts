@@ -38,14 +38,17 @@ export const Circle = styled.span<{ active: boolean }>`
     `}
 `;
 
-export const SelectBox = styled.div`
+export const SelectWrapper = styled.div`
   position: relative;
   height: 34px;
 `;
 
 export const Select = styled.select`
-  font-size: 0.9rem;
+  font-size: ${({ theme }) => theme.fontSizes.md};
   padding: 2px 5px;
   height: 34px;
   width: 200px;
+  cursor: pointer;
+  color: ${({ theme }) => theme.colors.black};
+  border-radius: 4px;
 `;

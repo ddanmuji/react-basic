@@ -5,15 +5,16 @@ import { ThemeProvider } from '@emotion/react';
 
 import { RouterConfig } from './libs';
 import { GlobalStyle, darkTheme, lightTheme } from './styles';
-import { theme } from './recoil';
+import { font, theme } from './recoil';
 
 const App = () => {
   const isDarkMode = useRecoilValue(theme.isDarkMode);
+  const fontFamily = useRecoilValue(font.fontAtom);
 
   return (
     <BrowserRouter>
       <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
-        <GlobalStyle />
+        <GlobalStyle fontFamily={fontFamily} />
         <Suspense fallback={<span>Loading...</span>}>
           <RouterConfig />
         </Suspense>

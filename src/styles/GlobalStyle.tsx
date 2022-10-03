@@ -1,7 +1,12 @@
 import { Global, css, useTheme } from '@emotion/react';
 import emotionReset from 'emotion-reset';
+import { FONT_LIST } from '../constants';
 
-const GlobalStyle = () => {
+interface GlobalStyleProps {
+  fontFamily: typeof FONT_LIST[number];
+}
+
+const GlobalStyle = ({ fontFamily }: GlobalStyleProps) => {
   const theme = useTheme();
 
   return (
@@ -11,7 +16,7 @@ const GlobalStyle = () => {
 
         *, *::after, *::before {
           box-sizing: border-box;
-          font-family: 'Noto Sans KR', sans-serif;
+          font-family: ${fontFamily};
           font-size: 100%;
           line-height: 1.4;
           color: ${theme.colors.gray[900]};

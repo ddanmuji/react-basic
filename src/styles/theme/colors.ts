@@ -1,12 +1,13 @@
 export const colors = {
   primary: '#40a9ff',
   secondary: '#ff9640',
+  white: '#ffffff',
+  black: '#000000',
 } as const;
 
 export const lightColors = {
   ...colors,
-  white: '#ffffff',
-  black: '#000000',
+
   gray: {
     '100': '#f8f9fa',
     '200': '#e9ecef',
@@ -22,8 +23,6 @@ export const lightColors = {
 
 export const darkColors = {
   ...colors,
-  white: '#000000',
-  black: '#ffffff',
   gray: {
     '100': '#212529',
     '200': '#343a40',
