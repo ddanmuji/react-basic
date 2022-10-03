@@ -1,11 +1,10 @@
-import { colors } from './colors';
+import { colors, darkColors, lightColors } from './colors';
 import { fontSizes, titleSize } from './sizes';
 
-const theme = {
-  fontSizes,
-  titleSize,
-  colors,
-};
+const common = { fontSizes, titleSize };
+const light = { colors: lightColors };
+const dark = { colors: darkColors };
 
 export { fontSizes, titleSize, colors };
-export default theme;
+export const lightTheme = { ...common, ...light };
+export const darkTheme = { ...common, ...dark };

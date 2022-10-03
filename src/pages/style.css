@@ -1,0 +1,113 @@
+.keyboard {
+  background-color: gray;
+  color: gray;
+  width: 1050px;
+  border-radius: 4px;
+}
+
+.row {
+  /* ! */
+  display: flex;
+}
+
+.key {
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+  /* ! */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  transition: 0.2s;
+  /* ! */
+}
+
+.key:hover {
+  background-color: lightgray;
+}
+
+.key.active {
+  background-color: #333;
+  color: #fff;
+}
+
+.key .two-value {
+  width: 100%;
+  text-align: center;
+}
+
+.fn-key {
+  width: 80px;
+}
+
+.space-key {
+  width: 420px;
+}
+
+.back-space-key {
+  width: 130px;
+}
+
+.tab-key {
+  width: 95px;
+}
+
+.back-slash-key {
+  width: 95px;
+}
+
+.caps-lock-key {
+  width: 110px;
+}
+
+.left-shift-key {
+  width: 145px;
+}
+
+.enter-key {
+  width: 150px;
+}
+
+.right-shift-key {
+  width: 185px;
+}
+
+// esfafa
+
+.input-group {
+  margin: 100px 0px;
+}
+
+.input {
+  border: none;
+  border-bottom: 2px solid lightgrey;
+  width: 1050px;
+  height: 50px;
+  font-size: 30px;
+  text-align: center;
+  display: block;
+}
+
+.error-message {
+  color: #cc0033;
+  font-size: 30px;
+  line-height: 30px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.input-group .error-message {
+  display: none;
+}
+
+.error input {
+  border-bottom: 2px solid red;
+}
+
+.error .error-message {
+  display: block;
+}

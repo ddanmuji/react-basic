@@ -2,7 +2,7 @@ import { lazy } from 'react';
 import { Navigate, useRoutes } from 'react-router-dom';
 import { ROUTE_PATH } from '../constants';
 
-const Keyboard = lazy(() => import('../pages/Keyboard'));
+const Keyboard = lazy(() => import('../pages/KeyboardPage'));
 const Test2 = lazy(() => import('../pages/Test2'));
 
 const RouterConfig = () => {
