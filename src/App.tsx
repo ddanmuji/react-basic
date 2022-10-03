@@ -1,11 +1,12 @@
-import Test from '@components/Test';
+import { ThemeProvider } from '@emotion/react';
+import { GlobalStyle, theme } from './styles';
 
-const App = () => {
-  return (
-    <div>
-      <Test />
-    </div>
-  );
-};
+const App = () => (
+  <div>
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
+    </ThemeProvider>
+  </div>
+);
 
 export default App;
