@@ -1,12 +1,18 @@
 import { ThemeProvider } from '@emotion/react';
+import { Suspense } from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import RouterConfig from './RouterConfig';
 import { GlobalStyle, theme } from './styles';
 
 const App = () => (
-  <div>
+  <BrowserRouter>
     <ThemeProvider theme={theme}>
       <GlobalStyle />
+      <Suspense fallback={<span>Loading...</span>}>
+        <RouterConfig />
+      </Suspense>
     </ThemeProvider>
-  </div>
+  </BrowserRouter>
 );
 
 export default App;
