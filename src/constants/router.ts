@@ -1,4 +1,5 @@
 export const ROUTE_PATH = {
-  TEST: '/test',
+  ROOT: '/',
+  KEYBOARD: '/keyboard',
   TEST2: '/test2',
 } as const;
