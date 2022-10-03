@@ -5,8 +5,10 @@ const CIRCLE_SIZE = '26px' as const;
 
 export const Container = styled.div`
   display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: 60px;
+  margin-bottom: 30px;
 `;
 
 export const Switch = styled.div`

@@ -8,7 +8,7 @@ export const fontSizes = {
   xl: calcRem(20),
 } as const;
 
-export const titleSize = {
+export const titleSizes = {
   xs: calcRem(22),
   sm: calcRem(24),
   md: calcRem(26),

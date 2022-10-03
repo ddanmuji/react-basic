@@ -15,17 +15,11 @@ const GlobalStyle = () => {
           font-size: 100%;
           line-height: 1.4;
           color: ${theme.colors.gray[900]};
-          transition: color 250ms ease-in-out;
-        }
-
-        * {
-          user-select: none;
-          outline: none;
+          transition: all 250ms ease-in-out;
         }
 
         body {
           background-color: ${theme.colors.gray[100]};
-          transition: background-color 250ms ease-in-out;
         }
 
         a {
